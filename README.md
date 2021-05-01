@@ -2,7 +2,7 @@
 
 **Description :**
 
-Nouvelle version de ce site : un nouveau design et les nouvelle technologies.
+Nouvelle version de ce site : un nouveau design et les nouvelles technologies.
 
 **Lien vers l'ancien site :**  (https://ihi-immer.com/)
 
