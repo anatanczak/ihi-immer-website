@@ -1,0 +1,47 @@
+@import "_colors";
+@import "_fonts";
+
+.NavBar {
+  display: flex;
+  background-color: $main-shady-blue;
+  padding: 5px 10px;
+}
+
+.Logo {
+  width: 40px;
+  height: auto;
+}
+
+.NavMenu {
+  display: flex;
+}
+
+.NavItem {
+  list-style: none;
+  margin-left: 20px;
+  position: relative;
+}
+
+.NavItemLink {
+  text-decoration: none;
+  color: $main-white;
+  font: $navbar-link-desktop;
+}
+.NavItemLink::after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: $main-white;
+  transform: scale(0);
+}
+.NavItemLink:hover::after {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.ActiveNavItem::after {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}

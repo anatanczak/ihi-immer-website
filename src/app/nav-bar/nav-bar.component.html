@@ -1,1 +1,39 @@
-<p>nav-bar works!</p>
+<div class="NavBar">
+  <img
+    class="Logo"
+    src="../../assets/images/icons/logo_ihi_light.svg"
+    alt="logo"
+  />
+  <ul class="NavMenu">
+    <li class="NavItem">
+      <a
+        class="NavItemLink"
+        routerLink="/"
+        routerLinkActive="ActiveNavItem"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li class="NavItem">
+      <a
+        class="NavItemLink"
+        routerLink="/services"
+        routerLinkActive="ActiveNavItem"
+        >Services</a
+      >
+    </li>
+    <li class="NavItem">
+      <a
+        class="NavItemLink"
+        routerLink="/spareparts"
+        routerLinkActive="ActiveNavItem"
+        >Spare Parts</a
+      >
+    </li>
+    <li class="NavItem">
+      <a class="NavItemLink" routerLink="/tips" routerLinkActive="ActiveNavItem"
+        >Useful Tips</a
+      >
+    </li>
+  </ul>
+</div>
