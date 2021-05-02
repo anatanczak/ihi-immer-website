@@ -46,8 +46,35 @@
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
-.SearchIcon {
+.SearchBarContainer {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.SearchIcon {
+  margin: 5px;
+}
+.SearchInput {
+  background-color: $main-shady-blue;
+  border: none;
+  border-bottom: 1px solid $main-white;
+  color: $main-white;
+  font: $navbar-searchinput-desktop;
+  transform: scaleX(0);
+  transition: 0.5s all ease-in-out;
+  transform-origin: right;
+}
+.SearchInput:active,
+.SearchInput:focus {
+  outline: none;
+}
+.SearchInputVisible {
+  transform: scaleX(1);
+}
+.CloseIcon {
+  height: 15px;
+  display: none;
+  margin: 5px;
 }
 
 .LanguageSelectContainer {

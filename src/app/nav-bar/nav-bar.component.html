@@ -36,10 +36,29 @@
       >
     </li>
   </ul>
-  <img
-    class="SearchIcon"
-    src="../../assets/images/icons/search_icon.svg"
-    alt="search icon"
-  />
+  <div class="SearchBarContainer">
+    <input
+      class="SearchInput"
+      #search
+      [ngClass]="{ SearchInputVisible: searchBarIsOpen === true }"
+      type="text"
+      [placeholder]="'NavBarSearchInputPlaceholder' | translate"
+    />
+    <img
+      class="SearchIcon"
+      [ngStyle]="{ display: toggleSearchIconDisplay() }"
+      src="../../assets/images/icons/search_icon.svg"
+      alt="search icon"
+      (click)="onClickSearchIcon()"
+    />
+    <img
+      class="CloseIcon"
+      [ngStyle]="{ display: toggleCloseIconDisplay() }"
+      src="../../assets/images/icons/close_icon.svg"
+      alt="close icon"
+      (click)="onClickCloseIcon()"
+    />
+  </div>
+
   <app-language-select class="LanguageSelectContainer"></app-language-select>
 </div>
