@@ -4,16 +4,17 @@
 .NavBar {
   display: flex;
   background-color: $main-shady-blue;
-  padding: 5px 10px;
+  padding: 10px 15px;
+  align-items: center;
 }
 
 .Logo {
-  width: 40px;
-  height: auto;
+  height: 30px;
 }
 
 .NavMenu {
   display: flex;
+  align-items: center;
 }
 
 .NavItem {
@@ -45,10 +46,12 @@
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
+.SearchIcon {
+  margin-left: auto;
+}
 
 .LanguageSelectContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
 }
