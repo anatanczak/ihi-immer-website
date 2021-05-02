@@ -10,6 +10,9 @@ import { ServicesComponent } from './services/services.component';
 import { SparePartsComponent } from './spare-parts/spare-parts.component';
 import { TipsComponent } from './tips/tips.component';
 import { SparePartComponent } from './spare-part/spare-part.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,26 @@ import { SparePartComponent } from './spare-part/spare-part.component';
     ServicesComponent,
     SparePartsComponent,
     TipsComponent,
-    SparePartComponent
+    SparePartComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
+
+// AOT compilation support
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
