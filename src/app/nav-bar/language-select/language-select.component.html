@@ -1,0 +1,15 @@
+<select
+  class="LanguageSelect"
+  #selectedLanguage
+  (change)="switchLanguage(selectedLanguage.value)"
+>
+  <option
+    class="LanguageOption"
+    style="color: black"
+    *ngFor="let language of translate.getLangs()"
+    [value]="language"
+    [selected]="language === translate.currentLang"
+  >
+    {{ language }}
+  </option>
+</select>

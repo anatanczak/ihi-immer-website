@@ -1,0 +1,73 @@
+@import "_colors";
+@import "_fonts";
+
+.LanguageSelect {
+  display: block;
+  font: $langauage-select-desktop;
+  text-transform: capitalize;
+  color: $main-white;
+  line-height: 1.3;
+  padding: 0.4em 1.2em 0.3em 0.4em;
+  margin: 0;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: url("../../../assets/images/icons/red_arrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.4em top 70%, 0 0;
+  background-size: 0.6em auto, 100%;
+}
+
+.LanguageOption {
+  -webkit-appearance: none;
+}
+.LanguageSelect::-ms-expand {
+  display: none;
+}
+.LanguageSelect:focus,
+.LanguageSelect:active {
+  outline: none;
+}
+
+/*  --------------------------------- MOBILE ------------------------------------ */
+// @media (max-width: $mobile-max-width) {
+//   .LanguageSelect {
+//     font-size: $mobile-p;
+//     padding: 0.4em 1.2em 0.3em 0.4em;
+//   }
+// }
+
+/*  --------------------------------- TABLET ------------------------------------ */
+// @media (min-width: $tablet-min-width) {
+//   .LanguageSelect {
+//     font-size: $tablet-p;
+
+//     color: $main-white;
+//     border: 2px solid $main-white;
+//     background-image: url("../../assets/Icons/dropdown_arrow_icon.png");
+//   }
+//   .LanguageSelect:hover {
+//     // TODO: Decide if we need a hover color
+//     //border-color: #d3dded;
+//   }
+//   .LanguageSelect:focus,
+//   .LanguageSelect:active {
+//     border-color: #d3dded;
+//   }
+// }
+
+/* -------------------------------- SMALL DESKTOP ---------------------------------- */
+// @media (min-width: $small-desktop-min-width) {
+//   .LanguageSelect {
+//     font-size: $small-desktop-p;
+//   }
+// }
+
+/* -------------------------------- LARGE DESKTOP ---------------------------------- */
+// @media (min-width: $large-desktop-min-width) {
+//   .LanguageSelect {
+//     font-size: $large-desktop-p;
+//   }
+// }

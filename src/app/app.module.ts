@@ -13,6 +13,7 @@ import { SparePartComponent } from './spare-part/spare-part.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LanguageSelectComponent } from './nav-bar/language-select/language-select.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     SparePartsComponent,
     TipsComponent,
     SparePartComponent,
+    LanguageSelectComponent,
   ],
   imports: [
     BrowserModule,

@@ -36,13 +36,5 @@
       >
     </li>
   </ul>
-  <select #selectedLanguage (change)="switchLanguage(selectedLanguage.value)">
-    <option
-      *ngFor="let language of translate.getLangs()"
-      [value]="language"
-      [selected]="language === translate.currentLang"
-    >
-      {{ language }}
-    </option>
-  </select>
+  <app-language-select class="LanguageSelectContainer"></app-language-select>
 </div>

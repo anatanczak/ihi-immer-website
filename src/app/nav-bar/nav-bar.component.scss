@@ -45,3 +45,10 @@
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
+
+.LanguageSelectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
