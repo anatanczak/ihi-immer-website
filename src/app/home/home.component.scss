@@ -1,0 +1,20 @@
+@import "_colors";
+@import "_fonts";
+@import "_breakpoints";
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------- Mobile Styles ------------------- */
+@media (max-width: $mobile-max-width) {
+  .hero-image-title-container {
+    min-height: 425px;
+    width: 100%;
+    background-image: url("../../assets/images/backgrounds/homepage_background_mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

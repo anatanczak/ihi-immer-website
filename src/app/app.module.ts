@@ -14,6 +14,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LanguageSelectComponent } from './nav-bar/language-select/language-select.component';
+import { HamburgerButtonComponent } from './nav-bar//hamburger-button/hamburger-button.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { LanguageSelectComponent } from './nav-bar/language-select/language-sele
     TipsComponent,
     SparePartComponent,
     LanguageSelectComponent,
+    HamburgerButtonComponent,
   ],
   imports: [
     BrowserModule,

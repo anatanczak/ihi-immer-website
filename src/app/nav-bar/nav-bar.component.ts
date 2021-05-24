@@ -8,27 +8,29 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavBarComponent implements OnInit {
   @ViewChild('search') searchElement: ElementRef;
-  searchBarIsOpen = false;
+  public searchBarIsOpen = false;
+  public navBarMenuIsOpen = false;
+
   constructor(public translate: TranslateService) {}
 
   ngOnInit(): void {}
 
-  onClickSearchIcon() {
+  public onClickSearchIcon() {
     this.searchBarIsOpen = true;
     setTimeout(() => {
       this.searchElement.nativeElement.focus();
     }, 0);
   }
-  onClickCloseIcon() {
+  public onClickCloseIcon() {
     this.searchBarIsOpen = false;
     setTimeout(() => {
       this.searchElement.nativeElement.value = '';
     }, 0);
   }
-  toggleSearchIconDisplay() {
+  public toggleSearchIconDisplay() {
     return this.searchBarIsOpen ? 'none' : 'block';
   }
-  toggleCloseIconDisplay() {
+  public toggleCloseIconDisplay() {
     return this.searchBarIsOpen ? 'block' : 'none';
   }
 }

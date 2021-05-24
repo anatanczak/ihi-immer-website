@@ -59,6 +59,9 @@
       (click)="onClickCloseIcon()"
     />
   </div>
-
+  <app-hamburger-button
+    [(menuIsOpen)]="navBarMenuIsOpen"
+    class="hamburger-button-container"
+  ></app-hamburger-button>
   <app-language-select class="LanguageSelectContainer"></app-language-select>
 </div>

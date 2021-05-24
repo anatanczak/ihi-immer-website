@@ -1,6 +1,8 @@
 @import "_colors";
 @import "_fonts";
+@import "_breakpoints";
 
+/* ----------------- Common Styles ----------------- */
 .NavBar {
   display: flex;
   background-color: $main-shady-blue;
@@ -15,6 +17,8 @@
 .NavMenu {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .NavItem {
@@ -47,7 +51,7 @@
   transition: all 0.5s ease-in-out;
 }
 .SearchBarContainer {
-  margin-left: auto;
+  // margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -60,8 +64,9 @@
   border-bottom: 1px solid $main-white;
   color: $main-white;
   font: $navbar-searchinput-desktop;
-  transform: scaleX(0);
-  transition: 0.5s all ease-in-out;
+  //transform: scaleX(0);
+  width: 0;
+  transition: 1s all ease-in-out;
   transform-origin: right;
 }
 .SearchInput:active,
@@ -69,7 +74,8 @@
   outline: none;
 }
 .SearchInputVisible {
-  transform: scaleX(1);
+  // transform: scaleX(1);
+  width: 180px;
 }
 .CloseIcon {
   height: 15px;
@@ -81,4 +87,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hamburger-button-container {
+  margin-left: auto;
+}
+
+/* ----------------- Mobile Styles ----------------- */
+@media (max-width: $mobile-max-width) {
+  .NavMenu {
+    display: none;
+  }
+  .SearchBarContainer {
+    display: none;
+  }
+  .LanguageSelectContainer {
+    display: none;
+  }
+}
+
+/* ----------------- Tablet Styles ----------------- */
+@media (min-width: $tablet-min-width) {
+  .hamburger-button-container {
+    display: none;
+  }
 }
