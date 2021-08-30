@@ -12,6 +12,7 @@ export class HamburgerButtonComponent implements OnInit {
   constructor() {}
 
   public onClickHandler() {
+    console.log('menu is button clicked');
     this.menuIsOpenChange.emit(!this.menuIsOpen);
   }
 

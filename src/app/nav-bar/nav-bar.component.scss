@@ -3,7 +3,8 @@
 @import "_breakpoints";
 
 /* ----------------- Common Styles ----------------- */
-.NavBar {
+// TODO: Rename classes (use dashes)
+.nav-bar {
   display: flex;
   background-color: $main-shady-blue;
   padding: 10px 15px;
@@ -14,25 +15,25 @@
   height: 30px;
 }
 
-.NavMenu {
+.nav-menu {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.NavItem {
+.nav-item {
   list-style: none;
   margin-left: 20px;
   position: relative;
 }
 
-.NavItemLink {
+.nav-item-link {
   text-decoration: none;
   color: $main-white;
   font: $navbar-link-desktop;
 }
-.NavItemLink::after {
+.nav-item-link::after {
   position: absolute;
   content: " ";
   bottom: 0;
@@ -42,16 +43,15 @@
   background-color: $main-white;
   transform: scale(0);
 }
-.NavItemLink:hover::after {
+.nav-item-link:hover::after {
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
-.ActiveNavItem::after {
+.active-nav-item::after {
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
-.SearchBarContainer {
-  // margin-left: auto;
+.search-bar-container {
   display: flex;
   align-items: center;
 }
@@ -64,7 +64,6 @@
   border-bottom: 1px solid $main-white;
   color: $main-white;
   font: $navbar-searchinput-desktop;
-  //transform: scaleX(0);
   width: 0;
   transition: 1s all ease-in-out;
   transform-origin: right;
@@ -74,7 +73,6 @@
   outline: none;
 }
 .SearchInputVisible {
-  // transform: scaleX(1);
   width: 180px;
 }
 .CloseIcon {
@@ -83,7 +81,7 @@
   margin: 5px;
 }
 
-.LanguageSelectContainer {
+.language-select-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,14 +92,34 @@
 
 /* ----------------- Mobile Styles ----------------- */
 @media (max-width: $mobile-max-width) {
-  .NavMenu {
+  .nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+    height: 50px;
+    transition: height 2s ease-in-out;
+  }
+  .logo-hamburger-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  .search-bar-container {
+    //display: none;
+  }
+  .language-select-container {
     display: none;
   }
-  .SearchBarContainer {
-    display: none;
-  }
-  .LanguageSelectContainer {
-    display: none;
+
+  .nav-menu-visible {
+    height: calc(100vh);
+    transition: height 2s ease-in-out;
   }
 }
 

@@ -1,42 +1,56 @@
-<div class="NavBar">
-  <img
-    class="Logo"
-    src="../../assets/images/icons/logo_ihi_light.svg"
-    alt="logo"
-  />
-  <ul class="NavMenu">
-    <li class="NavItem">
+<div
+  class="nav-bar"
+  [ngClass]="{ 'nav-menu-visible': navBarMenuIsOpen === true }"
+>
+  <div class="logo-hamburger-button-container">
+    <img
+      class="Logo"
+      src="../../assets/images/icons/logo_ihi_light.svg"
+      alt="logo"
+    />
+    <app-hamburger-button
+      [(menuIsOpen)]="navBarMenuIsOpen"
+      class="hamburger-button-container"
+      [ngClass]=""
+    ></app-hamburger-button>
+  </div>
+
+  <ul class="nav-menu">
+    <li class="nav-item">
       <a
-        class="NavItemLink"
+        class="nav-item-link"
         routerLink="/"
-        routerLinkActive="ActiveNavItem"
+        routerLinkActive="active-nav-item"
         [routerLinkActiveOptions]="{ exact: true }"
         >{{ "NavbarMenuHome" | translate }}</a
       >
     </li>
-    <li class="NavItem">
+    <li class="nav-item">
       <a
-        class="NavItemLink"
+        class="nav-item-link"
         routerLink="/services"
-        routerLinkActive="ActiveNavItem"
+        routerLinkActive="active-nav-item"
         >Services</a
       >
     </li>
-    <li class="NavItem">
+    <li class="nav-item">
       <a
-        class="NavItemLink"
+        class="nav-item-link"
         routerLink="/spareparts"
-        routerLinkActive="ActiveNavItem"
+        routerLinkActive="active-nav-item"
         >Spare Parts</a
       >
     </li>
-    <li class="NavItem">
-      <a class="NavItemLink" routerLink="/tips" routerLinkActive="ActiveNavItem"
+    <li class="nav-item">
+      <a
+        class="nav-item-link"
+        routerLink="/tips"
+        routerLinkActive="active-nav-item"
         >Useful Tips</a
       >
     </li>
   </ul>
-  <div class="SearchBarContainer">
+  <div class="search-bar-container">
     <input
       class="SearchInput"
       #search
@@ -59,9 +73,6 @@
       (click)="onClickCloseIcon()"
     />
   </div>
-  <app-hamburger-button
-    [(menuIsOpen)]="navBarMenuIsOpen"
-    class="hamburger-button-container"
-  ></app-hamburger-button>
-  <app-language-select class="LanguageSelectContainer"></app-language-select>
+
+  <app-language-select class="language-select-container"></app-language-select>
 </div>
