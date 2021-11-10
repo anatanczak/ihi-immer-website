@@ -2,9 +2,32 @@
 @import "_fonts";
 @import "_breakpoints";
 
+/* --------------- Common styles --------------------- */
 .homepage-container {
   display: flex;
   flex-direction: column;
+}
+
+.hero-image-title-container {
+  position: relative;
+}
+
+.slogan-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  color: $main-red;
+  background-color: $lightly-trasparent-white-background;
+}
+.slogan-element {
+  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+
+  padding: 0.7em 0.2em;
+  animation: moveleft 10s ease-in-out infinite;
 }
 
 /* ------------------- Mobile Styles ------------------- */
@@ -16,5 +39,52 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .slogan-container {
+    font: $h1-mobile;
+  }
+}
+
+/* ------------------- Tablet Styles ------------------- */
+@media (min-width: $tablet-min-width) {
+  .hero-image-title-container {
+    min-height: 500px;
+    width: 100%;
+    background-image: url("../../assets/images/backgrounds/homepage_background_tablet.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* ------------------ Desktop Styles ---------------------- */
+@media (min-width: $tablet-min-width) {
+  .hero-image-title-container {
+    min-height: 500px;
+    width: 100%;
+    background-image: url("../../assets/images/backgrounds/homepage_background_desktop.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .slogan-container {
+    font: $h1-desktop;
+  }
+}
+
+/* ------------------------------- Animations ------------------------------- */
+@keyframes moveleft {
+  20% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  90% {
+    transform: translateX(100%);
   }
 }
