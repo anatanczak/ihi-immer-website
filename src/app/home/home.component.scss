@@ -56,10 +56,13 @@
     background-size: cover;
     background-position: center;
   }
+  .slogan-container {
+    font: $h1-tablet;
+  }
 }
 
 /* ------------------ Desktop Styles ------------------------ */
-@media (min-width: $tablet-min-width) {
+@media (min-width: $desktop-min-width) {
   .hero-image-title-container {
     min-height: 500px;
     width: 100%;
