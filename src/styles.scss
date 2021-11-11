@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "_colors";
+@import "_fonts";
+@import "_breakpoints";
+
 * {
   box-sizing: content-box;
   margin: 0;
@@ -14,4 +18,47 @@ h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
+  padding: 0.7em 0.5em;
+}
+
+/* ------------------- Mobile Styles ------------------- */
+@media (max-width: $mobile-max-width) {
+  h1 {
+    font: $h1-mobile;
+    color: $main-red;
+    text-align: center;
+  }
+  h2 {
+    font: $h2-mobile;
+    color: $main-red;
+    text-align: center;
+  }
+}
+
+/* ------------------- Tablet Styles ------------------- */
+@media (min-width: $tablet-min-width) {
+  h1 {
+    font: $h1-tablet;
+    color: $main-red;
+    text-align: center;
+  }
+  h2 {
+    font: $h2-tablet;
+    color: $main-red;
+    text-align: center;
+  }
+}
+
+/* ------------------ Desktop Styles ------------------------ */
+@media (min-width: $desktop-min-width) {
+  h1 {
+    font: $h1-desktop;
+    color: $main-red;
+    text-align: center;
+  }
+  h2 {
+    font: $h2-desktop;
+    color: $main-red;
+    text-align: center;
+  }
 }
