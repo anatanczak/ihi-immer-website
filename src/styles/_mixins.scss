@@ -1,0 +1,11 @@
+@mixin outer-grey-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-light-grey;
+  padding: $container-standard-upper-lower-padding
+    $container-standard-side-padding;
+}
+@mixin inner-container {
+  max-width: $content-max-width-desktop;
+}

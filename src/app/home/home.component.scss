@@ -1,11 +1,14 @@
 @import "_colors";
 @import "_fonts";
 @import "_breakpoints";
+@import "_variables";
+@import "_mixins";
 
 /* --------------- Common styles --------------------- */
 .homepage-container {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .hero-image-title-container {
@@ -26,6 +29,12 @@
   flex-shrink: 0;
   width: 100%;
   animation: moveleft 10s ease-in-out infinite;
+}
+.grey-section-outer-container {
+  @include outer-grey-container;
+}
+.grey-section-inner-container {
+  @include inner-container;
 }
 
 /* ------------------- Mobile Styles ------------------- */
