@@ -1,4 +1,6 @@
 {
   "NavbarMenuHome": "Home page in Deutsch",
-  "HomeAboutUs": "Über uns"
+  "HomeAboutUsTitle": "Über uns",
+  "HomeAboutUsText": "<p>DE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue.</p>",
+  "": ""
 }
