@@ -5,5 +5,15 @@
   "HomeAboutUsText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue.</p> <p>Curabitur ipsum mauris, consectetur ut mattis vestibulum, vestibulum vel mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet lectus non mauris malesuada tempus eget non erat. Integer a commodo tellus. Duis vehicula sit amet ipsum a ullamcorper. Phasellus eget nulla quis tortor consequat ullamcorper a id ante. Aenean convallis libero non massa feugiat ultricies ut non lectus.</p>",
   "OurVisionTitle": "Our Vision",
   "OurVisionText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue.</p> <p>Curabitur ipsum mauris, consectetur ut mattis vestibulum, vestibulum vel mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet lectus non mauris malesuada tempus eget non erat. Integer a commodo tellus. Duis vehicula sit amet ipsum a ullamcorper. Phasellus eget nulla quis tortor consequat ullamcorper a id ante. Aenean convallis libero non massa feugiat ultricies ut non lectus.</p>",
-  "": ""
+  "ServicesTitle": "What we do",
+  "Service1Title": "bla1",
+  "Service1Text": "bla1",
+  "Service2Title": "bla2",
+  "Service2Text": "bla2",
+  "Service3Title": "bla3",
+  "Service3Text": "bla3",
+  "Service4Title": "bla4",
+  "Service4Text": "bla4",
+  "Service5Title": "bla5",
+  "Service5Text": "bla5"
 }

@@ -33,8 +33,11 @@
 .grey-section-outer-container {
   @include outer-grey-container;
 }
-.grey-section-inner-container {
+.section-inner-container {
   @include inner-container;
+}
+.section-outer-container {
+  @include outer-container;
 }
 
 /* ------------------- Mobile Styles ------------------- */

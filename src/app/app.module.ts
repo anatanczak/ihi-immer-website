@@ -15,6 +15,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LanguageSelectComponent } from './nav-bar/language-select/language-select.component';
 import { HamburgerButtonComponent } from './nav-bar//hamburger-button/hamburger-button.component';
+import { ServicesCardComponent } from './home/services-card/services-card.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HamburgerButtonComponent } from './nav-bar//hamburger-button/hamburger-
     SparePartComponent,
     LanguageSelectComponent,
     HamburgerButtonComponent,
+    ServicesCardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,16 @@
-@mixin outer-grey-container {
+@mixin outer-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $main-light-grey;
   padding: $container-standard-upper-lower-padding
     $container-standard-side-padding;
 }
+
+@mixin outer-grey-container {
+  @include outer-container;
+  background-color: $main-light-grey;
+}
+
 @mixin inner-container {
   max-width: $content-max-width-desktop;
 }
