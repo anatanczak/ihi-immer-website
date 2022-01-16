@@ -1,0 +1,39 @@
+@import "_colors";
+@import "_fonts";
+@import "_breakpoints";
+@import "_variables";
+@import "_mixins";
+
+/* --------------- Common styles --------------------- */
+.service-card-container {
+  background-color: $main-light-grey;
+  border-radius: $main-border-radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: $card-standard-upper-lower-padding;
+  padding-bottom: $card-standard-upper-lower-padding;
+  padding-right: $card-standard-side-padding;
+  padding-left: $card-standard-side-padding;
+}
+
+/* ------------------- Mobile Styles ------------------- */
+@media (max-width: $mobile-max-width) {
+  .service-card-title {
+    font: $h3-mobile;
+  }
+}
+
+/* ------------------- Tablet Styles ------------------- */
+@media (min-width: $tablet-min-width) {
+  .service-card-title {
+    font: $h3-tablet;
+  }
+}
+
+/* ------------------ Desktop Styles ------------------------ */
+@media (min-width: $desktop-min-width) {
+  .service-card-title {
+    font: $h3-desktop;
+  }
+}
