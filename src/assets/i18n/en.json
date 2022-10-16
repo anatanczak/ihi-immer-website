@@ -1,6 +1,7 @@
 {
   "NavbarMenuHome": "Home",
   "NavBarSearchInputPlaceholder": "Search website...",
+  "HomeSlogan": "We will help you.",
   "HomeAboutUsTitle": "About us",
   "HomeAboutUsText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue.</p> <p>Curabitur ipsum mauris, consectetur ut mattis vestibulum, vestibulum vel mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet lectus non mauris malesuada tempus eget non erat. Integer a commodo tellus. Duis vehicula sit amet ipsum a ullamcorper. Phasellus eget nulla quis tortor consequat ullamcorper a id ante. Aenean convallis libero non massa feugiat ultricies ut non lectus.</p>",
   "OurVisionTitle": "Our Vision",
@@ -13,7 +14,7 @@
   "Service3Title": "Dismantling, Installation, Putting into Operation",
   "Service3Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo.",
   "Service4Title": "Purchase and Sales of Graphic Machines",
-  "Service4Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue. Sed iaculis pharetra ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue. Sed iaculis pharetra ullamcorper.",
+  "Service4Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue. Sed iaculis pharetra ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   "Service5Title": "Overhauling, Reparation, Removal",
   "Service5Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam, justo et pretium luctus, diam neque efficitur nisi, non porttitor orci augue vitae augue. Sed iaculis pharetra ullamcorper."
 }

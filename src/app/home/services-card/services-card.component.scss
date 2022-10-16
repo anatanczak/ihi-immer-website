@@ -6,15 +6,16 @@
 
 /* --------------- Common styles --------------------- */
 .service-card-container {
+  min-height: 250px;
   background-color: $main-light-grey;
   border-radius: $main-border-radius;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: $card-standard-upper-lower-padding;
-  padding-bottom: $card-standard-upper-lower-padding;
-  padding-right: $card-standard-side-padding;
-  padding-left: $card-standard-side-padding;
+  padding: $card-standard-upper-lower-padding $card-standard-side-padding;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* ------------------- Mobile Styles ------------------- */

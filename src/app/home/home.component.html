@@ -1,27 +1,26 @@
 <div class="homepage-container">
   <div class="hero-image-title-container">
     <h1 class="slogan-container">
-      <span class="slogan-element">We will help you.</span>
-      <span class="slogan-element">Ми допоможемо Вам.</span>
-      <span class="slogan-element">Wir helfen Ihnen.</span>
+      <span class="slogan-element">{{ 'HomeSlogan' | translate }}</span>
     </h1>
   </div>
   <div class="grey-section-outer-container">
     <div class="section-inner-container">
-      <h2>{{ "HomeAboutUsTitle" | translate }}</h2>
+      <h2>{{ 'HomeAboutUsTitle' | translate }}</h2>
       <div [innerHTML]="'HomeAboutUsText' | translate"></div>
-      <h2>{{ "OurVisionTitle" | translate }}</h2>
+      <h2>{{ 'OurVisionTitle' | translate }}</h2>
       <div [innerHTML]="'OurVisionText' | translate"></div>
     </div>
   </div>
   <div class="section-outer-container">
     <div class="section-inner-container">
-      <h2>{{ "ServicesTitle" | translate }}</h2>
-      <app-services-card
-        *ngFor="let service of services"
-        [title]="service.title"
-        [text]="service.text"
-      ></app-services-card>
+      <h2>{{ 'ServicesTitle' | translate }}</h2>
+      <div class="services-container">
+        <app-services-card
+          *ngFor="let service of services"
+          [title]="service.title"
+          [text]="service.text"></app-services-card>
+      </div>
     </div>
   </div>
 </div>
