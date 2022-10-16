@@ -46,8 +46,16 @@
   padding-bottom: $card-standard-upper-lower-padding;
   padding-top: $card-standard-upper-lower-padding;
   & > app-services-card{
-    width: 49%;
     display: flex;
+  }
+}
+.equipment-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & > img{
+    margin: 20px;
+    border-radius: $main-border-radius;
   }
 }
 /* ------------------- Mobile Styles ------------------- */
@@ -64,6 +72,17 @@
   .slogan-container {
     font: $h1-mobile;
   }
+  .services-container {
+    & > app-services-card{
+      width: 100%;
+    }
+  }
+  .equipment-images-container {
+    & > img{
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 /* ------------------- Tablet Styles ------------------- */
@@ -79,6 +98,11 @@
   .slogan-container {
     font: $h1-tablet;
   }
+  .services-container {
+    & > app-services-card{
+      width: 49%;
+    }
+  }
 }
 
 /* ------------------ Desktop Styles ------------------------ */
@@ -93,5 +117,11 @@
   }
   .slogan-container {
     font: $h1-desktop;
+  }
+  .equipment-images-container {
+    & > img{
+      width: auto;
+      height: 120px;
+    }
   }
 }
