@@ -1,0 +1,20 @@
+@import "_colors";
+@import "_fonts";
+@import "_breakpoints";
+@import "_variables";
+@import "_mixins";
+
+.footer-container {
+  background-color: $main-shady-blue;
+  display: flex;
+  padding: $card-standard-upper-lower-padding $card-standard-side-padding;
+}
+.two-items-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-item {
+  padding: 10px;
+  color: $main-white;
+  font: $footer-link-desktop;
+}

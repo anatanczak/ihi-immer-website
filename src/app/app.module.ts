@@ -16,6 +16,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LanguageSelectComponent } from './nav-bar/language-select/language-select.component';
 import { HamburgerButtonComponent } from './nav-bar//hamburger-button/hamburger-button.component';
 import { ServicesCardComponent } from './home/services-card/services-card.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ServicesCardComponent } from './home/services-card/services-card.compon
     LanguageSelectComponent,
     HamburgerButtonComponent,
     ServicesCardComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,
