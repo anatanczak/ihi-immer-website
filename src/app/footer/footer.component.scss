@@ -4,6 +4,7 @@
 @import "_variables";
 @import "_mixins";
 
+/* --------------- Common styles --------------------- */
 .footer-container {
   background-color: $main-shady-blue;
   display: flex;
@@ -17,4 +18,20 @@
   padding: 10px;
   color: $main-white;
   font: $footer-link-desktop;
+}
+
+/* ------------------- Mobile Styles ------------------- */
+@media (max-width: $mobile-max-width) {
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .two-items-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright-container{
+    order: 3;
+    margin-top: 15px;
+  }
 }
