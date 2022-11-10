@@ -1,0 +1,78 @@
+@import "_colors";
+@import "_fonts";
+@import "_breakpoints";
+@import "_variables";
+@import "_mixins";
+
+/* --------------- Common styles --------------------- */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.hero-image-title-container {
+  position: relative;
+}
+
+.slogan-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  color: $main-red;
+  background-color: $lightly-trasparent-white-background;
+}
+.slogan-element {
+  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* ------------------- Mobile Styles ------------------- */
+@media (max-width: $mobile-max-width) {
+  .hero-image-title-container {
+    min-height: 425px;
+    width: 100%;
+    background-image: url("../../assets/images/backgrounds/services/services_background_mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slogan-container {
+    font: $h1-mobile;
+  }
+}
+
+
+/* ------------------- Tablet Styles ------------------- */
+@media (min-width: $tablet-min-width) {
+  .hero-image-title-container {
+    min-height: 500px;
+    width: 100%;
+    background-image: url("../../assets/images/backgrounds/services/services_background_tablet.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .slogan-container {
+    font: $h1-tablet;
+  }
+}
+
+/* ------------------ Desktop Styles ------------------------ */
+@media (min-width: $desktop-min-width) {
+  .hero-image-title-container {
+    min-height: 500px;
+    width: 100%;
+    background-image: url("../../assets/images/backgrounds/services/services_background_desktop.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .slogan-container {
+    font: $h1-desktop;
+  }
+}
