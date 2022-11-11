@@ -4,30 +4,34 @@
       <span class="slogan-element">{{ 'ServiceSlogan' | translate }}</span>
     </h1>
   </div>
-  <div class="service-container">
+  <div class="service-container consulting-service-container">
     <img
       class="service-image service-image-consulting"
       src="../../assets/images/content/services/services_consulting.webp"
       alt="decorative image" />
-    <div class="empty-container"></div>
-    <div class="description-container">
-      <h2 class="description-title">{{ 'ConsultingTitle' | translate }}</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies
-        sapien volutpat dui hendrerit volutpat. Aliquam felis tortor, egestas eu
-        maximus at, convallis vitae nunc. Proin enim orci, vehicula sit amet
-        quam a, pulvinar vehicula magna. Sed condimentum massa in diam
-        consequat, sit amet pretium lorem sollicitudin. Maecenas aliquam dapibus
-        imperdiet. Nullam a ornare enim, vel convallis nunc. In vulputate lacus
-        non lectus suscipit, non laoreet erat gravida. Sed erat odio, tempus a
-        elit nec, fringilla finibus tellus. Proin sed metus in lectus placerat
-        pulvinar. Morbi vel lectus ullamcorper neque lacinia mollis sit amet non
-        ipsum. In rhoncus aliquet dolor, ut laoreet felis pharetra at.
-        Pellentesque aliquet mauris et ipsum sollicitudin, vitae pharetra odio
-        tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et
-        ultrices posuere cubilia curae; Sed malesuada varius mi sit amet
-        euismod.
-      </p>
+    <div class="consulting-color-wrapper">
+      <div class="empty-container consulting-empty-container"></div>
+      <div class="consulting-description-container">
+        <h2 class="consulting-description-title">
+          {{ 'ConsultingTitle' | translate }}
+        </h2>
+        <div [innerHTML]="'ConsultingText' | translate"></div>
+      </div>
+    </div>
+  </div>
+  <div class="service-container machinery-service-container">
+    <img
+      class="service-image service-image-machinery"
+      src="../../assets/images/content/services/services_machinery.webp"
+      alt="decorative image" />
+    <div class="machinery-color-wrapper">
+      <div class="machinery-description-container">
+        <h2 class="machinery-description-title">
+          {{ 'MachineryTitle' | translate }}
+        </h2>
+        <div [innerHTML]="'MachineryText' | translate"></div>
+      </div>
+      <div class="empty-container machinery-empty-container"></div>
     </div>
   </div>
 </div>

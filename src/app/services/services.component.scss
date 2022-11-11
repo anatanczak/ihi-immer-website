@@ -69,32 +69,62 @@
   .slogan-container {
     font: $h1-tablet;
   }
-  .service-container {
+
+  /* ----- Consulting Service Styles ----- */
+  .consulting-service-container {
     position: relative;
-    background-color: $main-light-grey;
     margin: 100px 50px 50px 0;
-    display: flex;
     min-height: 500px;
   }
+  .consulting-color-wrapper{
+    background-color: $main-light-grey;
+    display: flex;
+  }
   .service-image {
-    width: 50%;
-    height: auto;
     border-radius: $main-border-radius;
   }
   .service-image-consulting {
     position: absolute;
+    width: 50%;
+    height: auto;
     top: -50px;
     left: 30px;
   }
-  .description-container {
+  .consulting-description-container {
     width: calc(44% - 30px);
     margin: 15px 3%;
   }
-  .description-title {
+  .consulting-description-title {
     text-align: left;
+    margin-left: 0;
   }
-  .empty-container {
+  .consulting-empty-container {
     width: calc(50% + 30px) ;
+  }
+
+  /* ----- Machinery Service Styles ----- */
+  .machinery-service-container {
+    position: relative;
+    margin: 50px 0 50px 50px;
+    min-height: 500px;
+  }
+  .machinery-color-wrapper {
+    background-color: $main-light-grey;
+    margin-top: 50px;
+    display: flex;
+  }
+  .service-image-machinery {
+    position: absolute;
+    right: 30px;
+    width: 30%;
+    height: auto;
+  }
+  .machinery-empty-container {
+    width: calc(30% + 30px);
+  }
+  .machinery-description-container{
+    width: calc(64% - 30px);
+    margin: 15px 3%;
   }
 }
 

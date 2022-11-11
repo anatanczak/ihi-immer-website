@@ -20,5 +20,10 @@
   "HomeEquipmentSectionTitle": "Equipment we work with",
   "FooterPrivacyPolicy": "Privacy Policy",
   "FooterContact": "CONTACT :",
-  "ServiceSlogan": "What we do"
+  "ServiceSlogan": "What we do",
+  "ConsultingTitle": "Consulting and Engineering",
+  "ConsultingText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies sapien volutpat dui hendrerit volutpat. Aliquam felis tortor, egestas eu  maximus at, convallis vitae nunc. Proin enim orci, vehicula sit amet  quam a, pulvinar vehicula magna. Sed condimentum massa in diam  consequat, sit amet pretium lorem sollicitudin. Maecenas aliquam dapibus  imperdiet.</p><p> Nullam a ornare enim, vel convallis nunc. In vulputate lacus non lectus suscipit, non laoreet erat gravida. Sed erat odio, tempus a elit nec, fringilla finibus tellus. Proin sed metus in lectus placerat pulvinar. Morbi vel lectus ullamcorper neque lacinia mollis sit amet non ipsum. In rhoncus aliquet dolor, ut laoreet felis pharetra at. Pellentesque aliquet mauris et ipsum sollicitudin, vitae pharetra odio tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed malesuada varius mi sit amet euismod.</p>",
+  "MachineryTitle": "Machinery and Equipment Valuation",
+  "MachineryText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies sapien volutpat dui hendrerit volutpat. Aliquam felis tortor, egestas eu  maximus at, convallis vitae nunc. Proin enim orci, vehicula sit amet  quam a, pulvinar vehicula magna. Sed condimentum massa in diam  consequat, sit amet pretium lorem sollicitudin. Maecenas aliquam dapibus  imperdiet.</p><p> Nullam a ornare enim, vel convallis nunc. In vulputate lacus non lectus suscipit, non laoreet erat gravida. Sed erat odio, tempus a elit nec, fringilla finibus tellus. Proin sed metus in lectus placerat pulvinar. Morbi vel lectus ullamcorper neque lacinia mollis sit amet non ipsum. In rhoncus aliquet dolor, ut laoreet felis pharetra at. Pellentesque aliquet mauris et ipsum sollicitudin, vitae pharetra odio tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed malesuada varius mi sit amet euismod.</p>",
+  "": ""
 }
